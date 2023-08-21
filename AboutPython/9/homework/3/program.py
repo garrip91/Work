@@ -5,7 +5,7 @@ bonus = float(input("Введите размер премии сотрудник
 class Worker:
 
     def __init__(self, name, surname, position, income={"wage": wage, "bonus": bonus}):
-        self.name = name,
+        self.name = name
         self.surname = surname
         self.position = position
         self._income = income
