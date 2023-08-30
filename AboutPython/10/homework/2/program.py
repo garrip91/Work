@@ -1,9 +1,13 @@
-class Cloth:
+from abc import ABC, abstractmethod
+
+
+class Cloth(ABC):
 
     def __init__(self):
         pass
     
     @property
+    @abstractmethod
     def fabric_consumption(self):
         pass
 
@@ -23,8 +27,8 @@ class Costume(Cloth):
     def __init__(self, H):
         self.h = H
     
-    @property
-    def fabric_consumption(self):
+    #@property
+    #def fabric_consumption(self):
         return 2 * self.h + 0.3
 
 
